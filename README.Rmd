@@ -1,0 +1,61 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo=FALSE, messages=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(bonn)
+```
+
+
+# bonn 
+
+The R package `bonn` provides functions to retrieve data from the [INKAR database](https://www.inkar.de/) maintained by the Federal Office for Building and Regional Planning (BBSR) in Bonn. The package uses an undocumented JSON API. 
+
+
+
+### Installation 
+
+You can install the package from Github using:  
+
+```{r, eval = FALSE}
+remotes::install_github("sumtxt/bonn", force=TRUE)
+```
+
+
+### Usage 
+
+The main data-retrieving function is `get_data()`. It requires to specify which variable to retrieve and for which geography. By default this function retrieves the data for all available time points and for all available units of a named geography. 
+
+For a list of available geographies (municipalities, disricts etc.), call `get_geographies()`. Then use `get_themes()` with the appropriate geography identifier to obtain a list of themes for which variables are available. Then call `get_variables()` for a list of available variables. Not all variables are available for every geography. Use the variable and geography identifier to call `get_data()`. To obtain a detailed description of a variable, call `get_metadata`.
+
+List available themes for districts (Kreise):
+
+```{r}
+head( get_themes(geography="KRE") ) 
+```
+
+Indicators for theme "unemployment": 
+
+```{r}
+head( get_variables(theme="011", geography="KRE") ) 
+```
+
+Retrieve data and metadata on the unemployment variable: 
+
+```{r}
+head( get_data(variable='11', geography="KRE") ) 
+```
+
+
+### Complementary Packages 
+
+* The R package `wiesbaden`  [github.com/sumtxt/wiesbaden](https://github.com/sumtxt/wiesbaden) provides functions to directly retrieve data from databases maintained by the Federal Statistical Office of Germany (DESTATIS) in Wiesbaden
+
