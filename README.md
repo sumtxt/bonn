@@ -68,6 +68,9 @@ head( get_data(variable='11', geography="KRE") )
 #> 5     06534       KRE        11 6.99 2004
 #> 6     07319       KRE        11 9.51 2004
 ```
+### Notes 
+
+- User reports suggest that some IDs of the database are not necessarily stable over time (see #1). 
 
 ### Complementary Packages
 
