@@ -79,3 +79,6 @@ head( get_data(variable='11', geography="KRE") )
     provides functions to directly retrieve data from databases
     maintained by the Federal Statistical Office of Germany (DESTATIS)
     in Wiesbaden
+-   The R package AGS github.com/sumtxt/ags provides functions to work 
+    with the Amtlicher Gemeindeschlüssel (AGS), e.g. construct time series of 
+    statistics for Germany's municipalities and districts.
