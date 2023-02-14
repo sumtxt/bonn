@@ -70,7 +70,7 @@ head( get_data(variable='11', geography="KRE") )
 ```
 ### Notes 
 
-- User reports suggest that some IDs of the database are not necessarily stable over time (see #1). 
+- User reports suggest that some IDs of the database are not necessarily stable over time (see https://github.com/sumtxt/bonn/issues/1). 
 
 ### Complementary Packages
 
