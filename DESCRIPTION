@@ -17,6 +17,5 @@ Imports:
 RoxygenNote: 7.1.2
 Suggests: 
     knitr,
-    rmarkdown,
-    tidyverse
+    rmarkdown
 VignetteBuilder: knitr
