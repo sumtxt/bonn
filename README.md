@@ -68,6 +68,9 @@ head( get_data(variable='11', geography="KRE") )
 #> 5     06534       KRE        11 6.99 2004
 #> 6     07319       KRE        11 9.51 2004
 ```
+### Notes 
+
+- User reports suggest that some IDs of the database are not necessarily stable over time (see https://github.com/sumtxt/bonn/issues/1). 
 
 ### Complementary Packages
 
@@ -76,3 +79,6 @@ head( get_data(variable='11', geography="KRE") )
     provides functions to directly retrieve data from databases
     maintained by the Federal Statistical Office of Germany (DESTATIS)
     in Wiesbaden
+-   The R package AGS [github.com/sumtxt/ags](https://github.com/sumtxt/ags) provides functions to work 
+    with the Amtlicher Gemeindeschlüssel (AGS), e.g. construct time series of 
+    statistics for Germany's municipalities and districts.
