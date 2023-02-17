@@ -54,8 +54,12 @@ Retrieve data and metadata on the unemployment variable:
 head( get_data(variable='11', geography="KRE") ) 
 ```
 
+### Notes 
+
+- User reports suggest that some IDs of the database are not necessarily stable over time (see https://github.com/sumtxt/bonn/issues/1). 
 
 ### Complementary Packages 
 
 * The R package `wiesbaden`  [github.com/sumtxt/wiesbaden](https://github.com/sumtxt/wiesbaden) provides functions to directly retrieve data from databases maintained by the Federal Statistical Office of Germany (DESTATIS) in Wiesbaden
 
+* The R package AGS [github.com/sumtxt/ags](https://github.com/sumtxt/ags/) provides functions to work with the Amtlicher Gemeindeschlüssel (AGS), e.g. construct time series of statistics for Germany's municipalities and districts.

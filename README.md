@@ -49,36 +49,40 @@ Indicators for theme “unemployment”:
 ``` r
 head( get_variables(theme="011", geography="KRE") ) 
 #>               KurznamePlus Bereich Gruppe  BU EU Zeitreihe
-#> 1        Arbeitslosenquote     011     11 KRE           22
-#> 2 Arbeitslosenquote Frauen     011     12 KRE           12
-#> 3       Arbeitslose Frauen     011     13 KRE           25
-#> 4 Arbeitslosenquote Männer     011     14 KRE           12
-#> 5       Arbeitslose Männer     011     15 KRE           25
+#> 1        Arbeitslosenquote     011     12 KRE           23
+#> 2 Arbeitslosenquote Frauen     011     13 KRE           13
+#> 3 Arbeitslosenquote Männer     011     14 KRE           13
+#> 4       Arbeitslose Frauen     011     15 KRE           26
+#> 5       Arbeitslose Männer     011     16 KRE           26
 ```
 
 Retrieve data and metadata on the unemployment variable:
 
 ``` r
 head( get_data(variable='11', geography="KRE") ) 
-#>   Schlüssel Raumbezug Indikator Wert Zeit
-#> 1     07331       KRE        11 7.07 2004
-#> 2     05770       KRE        11 9.51 2004
-#> 3     09574       KRE        11 6.64 2004
-#> 4     05120       KRE        11 9.67 2004
-#> 5     06534       KRE        11 6.99 2004
-#> 6     07319       KRE        11 9.51 2004
+#>   Schlüssel Raumbezug Indikator    Wert Zeit
+#> 1     01001       KRE        11 2487282 2000
+#> 2     09477       KRE        11 1580664 2000
+#> 3     09171       KRE        11 3602406 2000
+#> 4     05958       KRE        11 6520461 2000
+#> 5     07336       KRE        11 1027502 2000
+#> 6     06432       KRE        11 5140843 2000
 ```
-### Notes 
 
-- User reports suggest that some IDs of the database are not necessarily stable over time (see https://github.com/sumtxt/bonn/issues/1). 
+### Notes
+
+- User reports suggest that some IDs of the database are not necessarily
+  stable over time (see <https://github.com/sumtxt/bonn/issues/1>).
 
 ### Complementary Packages
 
--   The R package `wiesbaden`
-    [github.com/sumtxt/wiesbaden](https://github.com/sumtxt/wiesbaden)
-    provides functions to directly retrieve data from databases
-    maintained by the Federal Statistical Office of Germany (DESTATIS)
-    in Wiesbaden
--   The R package AGS [github.com/sumtxt/ags](https://github.com/sumtxt/ags) provides functions to work 
-    with the Amtlicher Gemeindeschlüssel (AGS), e.g. construct time series of 
-    statistics for Germany's municipalities and districts.
+- The R package `wiesbaden`
+  [github.com/sumtxt/wiesbaden](https://github.com/sumtxt/wiesbaden)
+  provides functions to directly retrieve data from databases maintained
+  by the Federal Statistical Office of Germany (DESTATIS) in Wiesbaden
+
+- The R package AGS
+  [github.com/sumtxt/ags](https://github.com/sumtxt/ags/) provides
+  functions to work with the Amtlicher Gemeindeschlüssel (AGS),
+  e.g. construct time series of statistics for Germany’s municipalities
+  and districts.

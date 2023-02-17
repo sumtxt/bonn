@@ -1,9 +1,8 @@
 Package: bonn
 Title: Access INKAR Database 
-Version: 1.0.0
-Date: 2022-01-03
-Author: Moritz Marbach <moritz.marbach@tamu.edu> [aut, cre]
-Maintainer: Moritz Marbach <moritz.marbach@tamu.edu>
+Version: 1.0.1
+Author: Moritz Marbach <m.marbach@ucl.ac.uk> [aut, cre]
+Maintainer: Moritz Marbach <m.marbach@ucl.ac.uk>
 Description: Retrieve and import data from the INKAR databases of the Federal Office for Building and Regional Planning (BBSR) in Bonn using their JSON API. 
 Depends: R (>= 3.3.1)
 License: GPL-3
@@ -14,7 +13,7 @@ LazyData: true
 Imports:
     httr (>= 1.2.1),
     jsonlite (>= 1.6.0)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Suggests: 
     knitr,
     rmarkdown

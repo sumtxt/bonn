@@ -1,6 +1,5 @@
 ^data-raw
 ^docs
-^README\.md$
 ^cran-comments\.md$
 ^\.DS_Store
 \.git
@@ -11,3 +10,6 @@
 ^_pkgdown\.yml$
 ^pkgdown$
 ^CRAN-SUBMISSION$
+install.R
+^README\.md$
+^README\.Rmd$
