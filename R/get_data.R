@@ -21,7 +21,7 @@
 #' @examples 
 #' 
 #' 	# GDP for all districts/all available years
-#'  get_data(variable="010", geography="KRE")
+#'  get_data(variable="011", geography="KRE")
 #' 
 #' 
 #' 
