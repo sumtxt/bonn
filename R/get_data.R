@@ -4,7 +4,7 @@
 #'
 #' @param variable variable identifier as character string
 #' @param geography geography identifier as character string 
-#' @param zeit time identifier as character string
+#' @param zeit time identifier as vector of character strings
 #'
 #' @details 
 #' To get a list of available geographies use \code{\link{get_geographies}}. To 
