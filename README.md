@@ -59,14 +59,14 @@ head( get_variables(theme="011", geography="KRE") )
 Retrieve data and metadata on the unemployment variable:
 
 ``` r
-head( get_data(variable='11', geography="KRE") ) 
-#>   Schlüssel Raumbezug Indikator    Wert Zeit
-#> 1     01001       KRE        11 2487282 2000
-#> 2     09477       KRE        11 1580664 2000
-#> 3     09171       KRE        11 3602406 2000
-#> 4     05958       KRE        11 6520461 2000
-#> 5     07336       KRE        11 1027502 2000
-#> 6     06432       KRE        11 5140843 2000
+head( get_data(variable='12', geography="KRE") ) 
+#>    Schlüssel Raumbezug Indikator  Wert Zeit
+#> 1     01001       KRE        12 14.60 1998
+#> 2     06533       KRE        12  7.85 1998
+#> 3     03404       KRE        12 11.66 1998
+#> 4     09276       KRE        12  7.29 1998
+#> 5     03101       KRE        12 13.36 1998
+#> 6     08221       KRE        12  7.87 1998
 ```
 
 ### Notes
