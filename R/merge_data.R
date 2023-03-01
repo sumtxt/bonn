@@ -49,4 +49,3 @@ merge_data <- function(variable,geography, zeit=NULL){
   
   return(merged_data)
 }
-  
