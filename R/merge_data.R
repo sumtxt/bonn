@@ -43,7 +43,7 @@ merge_data <- function(variable,geography, zeit=NULL){
   data[[i]] <- data[[i]][,-c(2,3)]
   }
   
-  merged_data <- Reduce(function(x, y) merge(x, y, by = c("Schlüssel", "Zeit")), data)
+  merged_data <- Reduce(function(x, y) merge(x, y, by = c("Schlüssel", "Zeit"), all=TRUE), data)
   merged_data <- cbind( rep(geography, nrow(merged_data)),merged_data)
   colnames(merged_data)[1] <- "Raumbezug"
   
