@@ -39,13 +39,15 @@ merge_data <- function(variable,geography, zeit=NULL){
   nvars <- length(variable)
   for (i in 1:nvars){
   data[[i]] <- get_data(variable=variable[i], geography="KRE", zeit) 
-  colnames(data[[i]])[4] <- data[[i]][1,3]
+  colnames(data[[i]])[4] <- get_metadata(data[[i]][1,3])["Kurzname"]
   data[[i]] <- data[[i]][,-c(2,3)]
   }
   
   merged_data <- Reduce(function(x, y) merge(x, y, by = c("Schlüssel", "Zeit")), data)
   merged_data <- cbind( rep(geography, nrow(merged_data)),merged_data)
   colnames(merged_data)[1] <- "Raumbezug"
+  
+  
   
   return(merged_data)
 }
