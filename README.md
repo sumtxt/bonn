@@ -60,7 +60,7 @@ Retrieve data and metadata on the unemployment variable:
 
 ``` r
 head( get_data(variable='12', geography="KRE") ) 
-#>    Schlüssel Raumbezug Indikator  Wert Zeit
+#>   Schlüssel Raumbezug Indikator  Wert Zeit
 #> 1     01001       KRE        12 14.60 1998
 #> 2     06533       KRE        12  7.85 1998
 #> 3     03404       KRE        12 11.66 1998

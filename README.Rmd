@@ -51,7 +51,7 @@ head( get_variables(theme="011", geography="KRE") )
 Retrieve data and metadata on the unemployment variable: 
 
 ```{r}
-head( get_data(variable='11', geography="KRE") ) 
+head( get_data(variable='12', geography="KRE") ) 
 ```
 
 ### Notes 
