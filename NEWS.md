@@ -1,10 +1,14 @@
 # bonn
 
+# Version 1.0.2 (2023-03-08)
+
+* added time parameter to get_data 
+* Release on CRAN
+
 # Version 1.0.1 (2023-02-17)
 
 * Removed `tidyverse` package suggest 
 * Added notes and references to README
-* Release on CRAN
 
 # Version 1.0.0 (2022-02-05)
 
