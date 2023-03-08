@@ -4,7 +4,7 @@
 #'
 #' @param variable variable identifier as character string
 #' @param geography geography identifier as character string 
-#' @param zeit time identifier as vector of character strings
+#' @param time time identifier as vector of character strings
 #'
 #' @details 
 #' To get a list of available geographies use \code{\link{get_geographies}}. To 
@@ -14,7 +14,7 @@
 #'     
 #' @return a \code{data.frame} with columns \code{Schlüssel} (unit identifier), 
 #' \code{Raumbezug} (geography identifier), \code{Indikator} (variable identifier), 
-#' \code{Wert} (value) and \code{Zeit} (year or time period). 
+#' \code{Wert} (value) and \code{time} (year or time period). 
 #'
 #' @seealso \code{\link{get_geographies}} \code{\link{get_variables}} \code{\link{get_metadata}} 
 #'
@@ -28,7 +28,7 @@
 #' 
 #' 
 #' @export
-get_data <- function(variable,geography, zeit=NULL){
+get_data <- function(variable,geography,time=NULL){
   
   if( length(variable)!=1 ) stop ("Can not retrieve data for more than one variable at a time.")
   if( length(geography)!=1 ) stop ("Can not retrieve data for more than one geography at a time.")
@@ -42,8 +42,8 @@ get_data <- function(variable,geography, zeit=NULL){
   
   
   zeitbezug_ <- zeitbezug[,c("Zeit", "IndID", "ZeitID")]
-  if(is.null(zeit)==FALSE){
-    zeitbezug_ <- zeitbezug_[zeitbezug_[,"Zeit"] %in% zeit,]}
+  if(is.null(time)==FALSE){
+    zeitbezug_ <- zeitbezug_[zeitbezug_[,"Zeit"] %in% time,]}
   
   zeitbezug <- zeitbezug[, c("Gruppe", "IndID", "ZeitID", "RaumID")]
   
@@ -51,8 +51,8 @@ get_data <- function(variable,geography, zeit=NULL){
   zeitbezug <- rename_var(zeitbezug, 'RaumID', 'level')
   zeitbezug <- rename_var(zeitbezug, 'IndID', 'indicator')
   zeitbezug <- rename_var(zeitbezug, 'ZeitID', 'time')	
-  if(is.null(zeit)==FALSE){
-    zeitbezug <- zeitbezug[zeitbezug[,"time"] %in% zeit,]}
+  if(is.null(time)==FALSE){
+    zeitbezug <- zeitbezug[zeitbezug[,"time"] %in% time,]}
   
   i <- list(Gruppe=variable)
   
