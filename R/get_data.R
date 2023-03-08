@@ -66,6 +66,11 @@ get_data <- function(variable,geography, zeit=NULL){
   
   r <- POST(url, body=param, encode = "json")
   
+  if(status_code(r)==500){ 
+    warning("The API returned an error. No data retrieved.")
+    return(NULL)
+  }
+
   jsondata <- fromJSON(content(r))[[1]]
   
   jsondata <- merge(jsondata, zeitbezug_, 
