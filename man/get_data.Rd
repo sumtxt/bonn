@@ -4,17 +4,19 @@
 \alias{get_data}
 \title{Get Data}
 \usage{
-get_data(variable, geography)
+get_data(variable, geography, time = NULL)
 }
 \arguments{
 \item{variable}{variable identifier as character string}
 
 \item{geography}{geography identifier as character string}
+
+\item{time}{time identifier as vector of character strings}
 }
 \value{
 a \code{data.frame} with columns \code{Schlüssel} (unit identifier), 
 \code{Raumbezug} (geography identifier), \code{Indikator} (variable identifier), 
-\code{Wert} (value) and \code{Zeit} (year or time period).
+\code{Wert} (value) and \code{time} (year or time period).
 }
 \description{
 \code{get_data} retrieves a data frame with all available values for a variable
@@ -28,7 +30,7 @@ The function retrieves all values for all available years by default.
 \examples{
 
 	# GDP for all districts/all available years
- get_data(variable="010", geography="KRE")
+ get_data(variable="011", geography="KRE")
 
 
 
