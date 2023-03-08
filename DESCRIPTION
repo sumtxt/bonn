@@ -1,8 +1,7 @@
 Package: bonn
 Title: Access INKAR Database 
 Version: 1.0.1
-Author: Moritz Marbach <m.marbach@ucl.ac.uk> [aut, cre]
-Maintainer: Moritz Marbach <m.marbach@ucl.ac.uk>
+Authors@R: c(person("Moritz", "Marbach", role = c("aut", "cre"), email="m.marbach@ucl.ac.uk", comment = c(ORCID = "0000-0002-7101-2821")))
 Description: Retrieve and import data from the INKAR databases of the Federal Office for Building and Regional Planning (BBSR) in Bonn using their JSON API. 
 Depends: R (>= 3.3.1)
 License: GPL-3
