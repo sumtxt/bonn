@@ -2,7 +2,7 @@ Package: bonn
 Title: Access INKAR Database 
 Version: 1.0.2
 Authors@R: c(person("Moritz", "Marbach", role = c("aut", "cre"), email="m.marbach@ucl.ac.uk", comment = c(ORCID = "0000-0002-7101-2821")))
-Description: Retrieve and import data from the INKAR databases of the Federal Office for Building and Regional Planning (BBSR) in Bonn using their JSON API. 
+Description: Retrieve and import data from the INKAR database (Indikatoren und Karten zur Raum- und Stadtentwicklung Datenbank, <[https://www.inkar.de]https://www.inkar.de>) of the Federal Office for Building and Regional Planning (BBSR) in Bonn using their JSON API. 
 Depends: R (>= 3.3.1)
 License: GPL-3
 URL: https://github.com/sumtxt/bonn/
@@ -13,7 +13,3 @@ Imports:
     httr (>= 1.2.1),
     jsonlite (>= 1.6.0)
 RoxygenNote: 7.2.3
-Suggests: 
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr
