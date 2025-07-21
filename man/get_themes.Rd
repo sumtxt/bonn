@@ -25,7 +25,7 @@ To get a list of available geographies use \code{\link{get_geographies}}.
 # This is likely because of a SSL certificate issue on the INKAR server. 
 # Disabling SSL verification comes with risks: 
 # https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
-httr::set_config(config(ssl_verifypeer = 0L))
+httr::set_config(httr::config(ssl_verifypeer = 0L))
 
 # Available themes  
 get_themes("KRE")

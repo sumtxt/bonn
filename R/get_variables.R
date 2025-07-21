@@ -20,7 +20,7 @@
 #' # This is likely because of a SSL certificate issue on the INKAR server. 
 #' # Disabling SSL verification comes with risks: 
 #' # https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
-#' httr::set_config(config(ssl_verifypeer = 0L))
+#' httr::set_config(httr::config(ssl_verifypeer = 0L))
 #' 
 #' # Retrieves list of available variables in the  
 #' # theme "unemployment" for districts 
