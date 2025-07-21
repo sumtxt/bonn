@@ -69,6 +69,22 @@ head( get_data(variable='12', geography="KRE") )
 #> 6     07143       KRE        12  7.38 1998
 ```
 
+The SSL vertification seems to fail for some Linux systems. To disable
+SSL verification check for a session, use:
+
+``` r
+httr::set_config(httr::config(ssl_verifypeer = 0L))
+head( get_themes(geography="KRE") ) 
+#>    ID          Bereich                  Unterbereich
+#> 1 000    Absolutzahlen                 Absolutzahlen
+#> 2 011 Arbeitslosigkeit                     Allgemein
+#> 3 013 Arbeitslosigkeit                 Altersgruppen
+#> 4 012 Arbeitslosigkeit                      Struktur
+#> 5 021 Bauen und Wohnen Baulandmarkt und Bautätigkeit
+#> 6 022 Bauen und Wohnen  Gebäude- und Wohnungsbestand
+httr::reset_config()
+```
+
 ### Notes
 
 - User reports suggest that some IDs of the database are not necessarily
