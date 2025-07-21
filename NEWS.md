@@ -1,5 +1,10 @@
 # bonn
 
+# Version 1.0.3 (2025-07-21)
+
+* added code to disable SSL check to all examples
+* Release on CRAN
+
 # Version 1.0.2 (2023-03-08)
 
 * added time parameter to get_data 

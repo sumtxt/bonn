@@ -54,6 +54,16 @@ Retrieve data and metadata on the unemployment variable:
 head( get_data(variable='12', geography="KRE") ) 
 ```
 
+The SSL vertification seems to fail for some Linux systems. To disable SSL verification check for a session, use:  
+
+```{r}
+httr::set_config(httr::config(ssl_verifypeer = 0L))
+head( get_themes(geography="KRE") ) 
+httr::reset_config()
+```
+
+
+
 ### Notes 
 
 - User reports suggest that some IDs of the database are not necessarily stable over time (see https://github.com/sumtxt/bonn/issues/1). 
