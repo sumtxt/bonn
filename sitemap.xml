@@ -1,14 +1,14 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/news/index.html</loc></url>
-<url><loc>/reference/bonn-package.html</loc></url>
-<url><loc>/reference/get_data.html</loc></url>
-<url><loc>/reference/get_geographies.html</loc></url>
-<url><loc>/reference/get_metadata.html</loc></url>
-<url><loc>/reference/get_themes.html</loc></url>
-<url><loc>/reference/get_variables.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/404.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/authors.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/index.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/news/index.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/reference/bonn-package.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/reference/get_data.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/reference/get_geographies.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/reference/get_metadata.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/reference/get_themes.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/reference/get_variables.html</loc></url>
+<url><loc>https://sumtxt.github.io/bonn/reference/index.html</loc></url>
 </urlset>
 
