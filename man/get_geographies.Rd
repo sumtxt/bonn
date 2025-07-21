@@ -18,12 +18,19 @@ and \code{NGeb} (number of units) or with the columns \code{Schlüssel} (unit id
 }
 \examples{
 
- # Available geographies  
- get_geographies()
+# The SSL vertification seems to fail for some Linux systems. 
+# This is likely because of a SSL certificate issue on the INKAR server. 
+# Disabling SSL verification comes with risks: 
+# https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
+httr::set_config(config(ssl_verifypeer = 0L))
 
-	# All districts 
-	get_geographies("KRS")
+# Available geographies  
+get_geographies()
 
+# All districts 
+get_geographies("KRS")
 
+# Reset configuration  
+httr::reset_config()
 
 }

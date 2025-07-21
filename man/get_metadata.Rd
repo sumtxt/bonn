@@ -21,10 +21,17 @@ To get a list of available variables use \code{\link{get_variables}}.
 }
 \examples{
 
-	# Metadata for GDP variable
- get_metadata("010")
+# The SSL vertification seems to fail for some Linux systems. 
+# This is likely because of a SSL certificate issue on the INKAR server. 
+# Disabling SSL verification comes with risks: 
+# https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
+httr::set_config(config(ssl_verifypeer = 0L))
 
+# Metadata for GDP variable
+get_metadata("010")
 
+# Reset configuration  
+httr::reset_config()
 
 
 }
