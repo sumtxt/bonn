@@ -49,11 +49,11 @@ Indicators for theme “unemployment”:
 ``` r
 head( get_variables(theme="011", geography="KRE") ) 
 #>               KurznamePlus Bereich Gruppe  BU EU Zeitreihe
-#> 1        Arbeitslosenquote     011     12 KRE           23
-#> 2 Arbeitslosenquote Frauen     011     13 KRE           13
-#> 3 Arbeitslosenquote Männer     011     14 KRE           13
-#> 4       Arbeitslose Frauen     011     15 KRE           26
-#> 5       Arbeitslose Männer     011     16 KRE           26
+#> 1        Arbeitslosenquote     011     12 KRE           24
+#> 2 Arbeitslosenquote Frauen     011     13 KRE           15
+#> 3 Arbeitslosenquote Männer     011     14 KRE           15
+#> 4       Arbeitslose Frauen     011     15 KRE           28
+#> 5       Arbeitslose Männer     011     16 KRE           28
 ```
 
 Retrieve data and metadata on the unemployment variable:
@@ -62,11 +62,11 @@ Retrieve data and metadata on the unemployment variable:
 head( get_data(variable='12', geography="KRE") ) 
 #>   Schlüssel Raumbezug Indikator  Wert Zeit
 #> 1     01001       KRE        12 14.60 1998
-#> 2     06533       KRE        12  7.85 1998
-#> 3     03404       KRE        12 11.66 1998
-#> 4     09276       KRE        12  7.29 1998
-#> 5     03101       KRE        12 13.36 1998
-#> 6     08221       KRE        12  7.87 1998
+#> 2     12065       KRE        12 17.06 1998
+#> 3     09271       KRE        12  7.32 1998
+#> 4     03402       KRE        12 14.88 1998
+#> 5     11000       KRE        12 16.10 1998
+#> 6     07143       KRE        12  7.38 1998
 ```
 
 ### Notes

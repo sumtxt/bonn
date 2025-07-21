@@ -1,15 +1,7 @@
-#'	
-#' Data retrieval client for the INKAR Database 
-#' 
-#' 
-#' 
-#' @name bonn-package
-#' 
-#' @docType package
-#' @title Data retrieval client for the INKAR Database 
-#' @author Moritz Marbach \email{moritz.marbach@tamu.edu}
+#' Data retrieval client for the INKAR Database
 #'
-#' 
-#' @import httr 
-#' @importFrom jsonlite fromJSON 
-NULL
+#' @keywords internal
+#' @import httr
+#' @importFrom jsonlite fromJSON
+#' @author Moritz Marbach <m.marbach@ucl.ac.uk>
+"_PACKAGE"

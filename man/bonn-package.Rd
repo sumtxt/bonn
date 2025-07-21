@@ -2,11 +2,21 @@
 % Please edit documentation in R/bonn-package.R
 \docType{package}
 \name{bonn-package}
+\alias{bonn}
 \alias{bonn-package}
 \title{Data retrieval client for the INKAR Database}
 \description{
-Data retrieval client for the INKAR Database
+Retrieve and import data from the INKAR database (Indikatoren und Karten zur Raum- und Stadtentwicklung Datenbank, \url{https://www.inkar.de}) of the Federal Office for Building and Regional Planning (BBSR) in Bonn using their JSON API.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/sumtxt/bonn/}
+  \item Report bugs at \url{https://github.com/sumtxt/bonn/issues}
+}
+
 }
 \author{
-Moritz Marbach \email{moritz.marbach@tamu.edu}
+Moritz Marbach <m.marbach@ucl.ac.uk>
 }
+\keyword{internal}
