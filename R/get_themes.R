@@ -14,10 +14,17 @@
 #'
 #' @examples 
 #' 
-#'  # Available themes  
-#'  get_themes("KRE")
+#' # The SSL vertification seems to fail for some Linux systems. 
+#' # This is likely because of a SSL certificate issue on the INKAR server. 
+#' # Disabling SSL verification comes with risks: 
+#' # https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
+#' httr::set_config(config(ssl_verifypeer = 0L))
 #' 
+#' # Available themes  
+#' get_themes("KRE")
 #' 
+#' # Reset configuration  
+#' httr::reset_config()
 #' 
 #' 
 #' 

@@ -16,11 +16,18 @@
 #'
 #' @examples 
 #' 
-#'  # Retrieves list of available variables in the  
-#'  # theme "unemployment" for districts 
-#'  get_variables(theme="011", geography="KRE")
+#' # The SSL vertification seems to fail for some Linux systems. 
+#' # This is likely because of a SSL certificate issue on the INKAR server. 
+#' # Disabling SSL verification comes with risks: 
+#' # https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html
+#' httr::set_config(config(ssl_verifypeer = 0L))
 #' 
+#' # Retrieves list of available variables in the  
+#' # theme "unemployment" for districts 
+#' get_variables(theme="011", geography="KRE")
 #' 
+#' # Reset configuration  
+#' httr::reset_config()
 #' 
 #' 
 #' 
