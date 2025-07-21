@@ -19,7 +19,7 @@
 #' @seealso \code{\link{get_geographies}} \code{\link{get_variables}} \code{\link{get_metadata}} 
 #'
 #' @examples 
-#' 
+#'  options(HTTPSInsecureRequests = TRUE)
 #' 	# GDP for all districts/all available years
 #'  get_data(variable="011", geography="KRE")
 #' 
