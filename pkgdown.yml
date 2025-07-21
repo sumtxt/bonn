@@ -2,7 +2,7 @@ pandoc: 3.6.4
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-07-21T09:05Z
+last_built: 2025-07-21T11:18Z
 urls:
   reference: https://github.com/sumtxt/bonn/reference
   article: https://github.com/sumtxt/bonn/articles

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">bonn</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.3</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,8 +67,14 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
-<span class="r-in"><span>  <span class="co"># Metadata for GDP variable</span></span></span>
-<span class="r-in"><span> <span class="fu">get_metadata</span><span class="op">(</span><span class="st">"010"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co"># The SSL vertification seems to fail for some Linux systems. </span></span></span>
+<span class="r-in"><span><span class="co"># This is likely because of a SSL certificate issue on the INKAR server. </span></span></span>
+<span class="r-in"><span><span class="co"># Disabling SSL verification comes with risks: </span></span></span>
+<span class="r-in"><span><span class="co"># https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html</span></span></span>
+<span class="r-in"><span><span class="fu">httr</span><span class="fu">::</span><span class="fu"><a href="https://httr.r-lib.org/reference/set_config.html" class="external-link">set_config</a></span><span class="op">(</span><span class="fu">httr</span><span class="fu">::</span><span class="fu"><a href="https://httr.r-lib.org/reference/config.html" class="external-link">config</a></span><span class="op">(</span>ssl_verifypeer <span class="op">=</span> <span class="fl">0L</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Metadata for GDP variable</span></span></span>
+<span class="r-in"><span><span class="fu">get_metadata</span><span class="op">(</span><span class="st">"010"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                              Name    Kurzname Algorithmus</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 Zahl der Arbeitslosen insgesamt Arbeitslose            </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                                                                                       Quelle</span>
@@ -78,7 +84,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>   ID</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 10</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Reset configuration  </span></span></span>
+<span class="r-in"><span><span class="fu">httr</span><span class="fu">::</span><span class="fu"><a href="https://httr.r-lib.org/reference/set_config.html" class="external-link">reset_config</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
