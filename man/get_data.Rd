@@ -28,7 +28,7 @@ get a list of available variables use \code{\link{get_variables}}.
 The function retrieves all values for all available years by default.
 }
 \examples{
-
+ options(HTTPSInsecureRequests = TRUE)
 	# GDP for all districts/all available years
  get_data(variable="011", geography="KRE")
 
